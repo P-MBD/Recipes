@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, Text, View } from 'react-native';
+import Rating from '../Rating';
 import styles from './styles';
 
 const RecipeCard = ({ title, style, image, author, rating, time }) => {
@@ -10,7 +11,7 @@ const RecipeCard = ({ title, style, image, author, rating, time }) => {
                     <Text numberOfLines={1} style={styles.title}>{title}</Text>
 
                 </View>
-
+                <Rating rating={4}/>
                 <Image style={styles.image} source={{ uri: 'https://th.bing.com/th/id/OIP.IZCChzLpwY9eNP-3TbpWygHaFj?pid=ImgDet&rs=1'}} />
             </View>
 

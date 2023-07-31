@@ -1,9 +1,13 @@
 import { StyleSheet } from "react-native";
-import styles from "../Splash/styles";
-const sytles = StyleSheet.create({
- container:{
-    
- }
-});
+import colors from "../../constants/colors";
+
+const styles = StyleSheet.create({
+    container: {
+        paddingHorizontal: 24,
+    },
+    list: {
+        marginBottom: 24,
+    }
+})
 
 export default styles;
